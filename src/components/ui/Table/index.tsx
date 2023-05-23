@@ -68,8 +68,8 @@ export function Table ({titleTable, dadosTable, botao}: propsTable) {
                           </div>
                       </td>
                       {
-                          Object.keys(dado).map((e): any => (
-                              <td className="px-6 py-4">
+                          Object.keys(dado).map((e, index): any => (
+                              <td key={index} className="px-6 py-4">
                           { dado[e] }
                       </td>
 

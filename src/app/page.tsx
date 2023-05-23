@@ -47,7 +47,7 @@ export default function Home() {
         <CardBoard title='Vagas que combinam com meu perfil'>
             {
               cardList.map(data => (
-                <Card data={data}/>
+                <Card key={data.id_vaga} data={data}/>
               ))
             }
         </CardBoard>
